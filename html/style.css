@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'another_shabby';
+  src: url("fonts/anothershabby_trial-webfont.eot");
+  src: url("fonts/anothershabby_trial-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/anothershabby_trial-webfont.woff") format("woff"), url("fonts/anothershabby_trial-webfont.ttf") format("truetype"), url("fonts/anothershabby_trial-webfont.svg#another_shabbyregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  background: #2A363B;
+  color: white;
+  font-family: sans-serif;
+}
+
+.page {
+  border-radius: 15px;
+  padding: 25px;
+  margin: 25px auto;
+  background: #3d4c52;
+  max-width: 800px;
+}
+
+h1 {
+  font-family: 'another_shabby';
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+.fl {
+  float: left;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.fr {
+  float: left;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.picks {
+  text-align: center;
+  width: 750px;
+  margin: 0 auto;
+  display: block;
+}
+
+.picks:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+footer {
+  margin: 100px auto 0 auto;
+  text-align: center;
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+h1, h2 {
+  color: white;
+  font-weight: 100;
+}
+
+.stageCPU, .stageUser {
+  border: 1px solid #4f626a;
+  overflow: hidden;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.stageCPU {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.battler {
+  vertical-align: top;
+  width: 250px;
+  height: 250px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.reset {
+  color: white;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.choice {
+  text-transform: uppercase;
+  width: 220px;
+  height: 45px;
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+
+.choice:hover {
+  background-color: #b3cc57;
+}
+
+.outcome {
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.Squirrel {
+  background-image: url("img/squirrel.png");
+  background-size: 250px, 250px;
+}
+
+.Spider {
+  background: url("img/spider.png");
+  background-size: 250px, 250px;
+}
+
+.Rock {
+  background: url("img/rock.png");
+  background-size: 250px, 250px;
+}
+
+.picked {
+  background-color: #AB3E5B;
+}
+
+.button, .button:visited {
+  background: #222222 url(overlay.png) repeat-x;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  cursor: pointer;
+}
+
+.green.button, .green.button:visited {
+  background-color: #99B898;
+}
+
+.green.button:hover {
+  background-color: #abc3aa;
+}
+
+.red.button, .red.button:visited {
+  background-color: #E84A5F;
+}
+
+.red.button:hover {
+  background-color: #f2566b;
+}
+
+.triangle-isosceles {
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 .5em;
+  color: #fff;
+  background: #FF847C;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.triangle-isosceles:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #FF847C transparent;
+  display: block;
+  width: 0;
+}
